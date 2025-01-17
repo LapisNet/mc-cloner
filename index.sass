@@ -1,0 +1,83 @@
+$pside : 4%
+$ptop : 1%
+$mcolor : #0024FF
+
+body
+  padding: 4%
+  font-family: "mc", Arial
+  background-image: url( "lapis-bg.png" )
+  color: #FFF
+
+input[type="text"]
+  width: 90%
+  border: 2px solid rgba( $mcolor, 60% )
+  border-radius: 0%
+  background-color: #FFFFFF77
+  color: #FFF
+  &:focus
+    outline: none
+
+button
+  border: none
+  background-color: rgba( $mcolor, 60% )
+  padding-left: $pside
+  padding-right: $pside
+  padding-top: $ptop
+  padding-bottom: $ptop
+  color: #FFF
+
+p
+  color: #CCC
+  font-size: 90%
+  margin: 0px
+  margin-bottom: 10px
+
+@font-face
+  src: url( "mc.ttf" )
+  font-family: "mc"
+
+.lapis-nav
+  position: fixed
+  top: 0
+  left: 0
+  display: block
+  width: 100%
+  background-color: $mcolor
+  padding-left: $pside
+  padding-right: $pside
+  padding-top: $ptop
+  padding-bottom: $ptop
+  font-size: 190%
+  z-index: 10
+  backdrop-filter: blur( 5px )
+  box-shadow: 0px 20px 0.5em rgba( 0, 0, 0, 0.5 )
+
+h1, h2, h3
+  margin: 0px
+  margin-top: 10px
+  border-bottom: 2px solid rgba( $mcolor, 50% )
+
+.mc-v
+  background-color: #AAAAAA55
+  display: block
+  height: 10ch
+  overflow-y: auto
+  margin: 20px
+  .mc-text
+    padding: 2%
+    display: inline-block
+    width: 60%
+  .mc-icon
+    float: right
+    width: 30%
+
+@media screen and (orientation: landscape)
+  .mc-v
+    overflow-y: auto
+    height: 20ch
+
+#vlist
+  overflow-y: auto
+  display: block
+  height: 200px
+  backdrop-filter: blur( 5px )

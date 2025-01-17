@@ -1,0 +1,91 @@
+body {
+  padding: 4%;
+  font-family: "mc", Arial;
+  background-image: url("lapis-bg.png");
+  color: #FFF;
+}
+
+input[type=text] {
+  width: 90%;
+  border: 2px solid rgba(0, 36, 255, 0.6);
+  border-radius: 0%;
+  background-color: rgba(255, 255, 255, 0.4666666667);
+  color: #FFF;
+}
+input[type=text]:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: rgba(0, 36, 255, 0.6);
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #FFF;
+}
+
+p {
+  color: #CCC;
+  font-size: 90%;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+@font-face {
+  src: url("mc.ttf");
+  font-family: "mc";
+}
+.lapis-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: #0024FF;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 190%;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 20px 0.5em rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+  margin: 0px;
+  margin-top: 10px;
+  border-bottom: 2px solid rgba(0, 36, 255, 0.5);
+}
+
+.mc-v {
+  background-color: rgba(170, 170, 170, 0.3333333333);
+  display: block;
+  height: 10ch;
+  overflow-y: auto;
+  margin: 20px;
+}
+.mc-v .mc-text {
+  padding: 2%;
+  display: inline-block;
+  width: 60%;
+}
+.mc-v .mc-icon {
+  float: right;
+  width: 30%;
+}
+
+@media screen and (orientation: landscape) {
+  .mc-v {
+    overflow-y: auto;
+    height: 20ch;
+  }
+}
+#vlist {
+  overflow-y: auto;
+  display: block;
+  height: 200px;
+  backdrop-filter: blur(5px);
+}
