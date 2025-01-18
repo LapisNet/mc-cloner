@@ -50,7 +50,8 @@ p {
   padding-bottom: 1%;
   font-size: 190%;
   z-index: 10;
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   box-shadow: 0px 20px 0.5em rgba(0, 0, 0, 0.5);
 }
 
@@ -74,20 +75,15 @@ h1, h2, h3 {
 }
 .mc-v .mc-icon {
   float: right;
-  width: 30%;
+  width: 10ch;
 }
 
-@media screen and (orientation: landscape) {
-  .mc-v {
-    overflow-y: auto;
-    height: 20ch;
-  }
-}
 #vlist {
   overflow-y: auto;
   display: block;
   height: 200px;
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 a {
@@ -95,4 +91,4 @@ a {
 }
 a:visited {
   color: #DDD;
-}
+}/*# sourceMappingURL=index.css.map */
